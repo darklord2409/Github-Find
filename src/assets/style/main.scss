@@ -1,0 +1,254 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'arial';
+}
+
+a {
+   text-decoration: none;
+}
+
+ul {
+   list-style: none;
+}
+
+.container {
+   max-width: 1320px;
+   width: 100%;
+   padding: 0 15px;
+   margin: auto;
+}
+
+body {
+   background: #E5E5E5;
+}
+
+.header__nav {
+   background: #FFFFFF;
+   padding: 20px 30px;
+
+   &-title {
+      font-size: 25px;
+      line-height: 120%;
+      text-transform: uppercase;
+      color: #3F3F3F;
+   }
+}
+
+.main {
+   margin-top: 20px;
+}
+
+.search {
+   display: flex;
+   justify-content: center;
+
+   &__box {
+      max-width: 600px;
+      width: 100%;
+
+      &-input {
+         width: 100%;
+         padding: 10px 20px;
+         font-size: 14px;
+         line-height: 120%;
+         color: #1d1d1e;
+         border: none;
+         outline: none;
+         border-radius: 4px 0 0 4px;
+
+         ::placeholder {
+            color: #C2C2C5;
+         }
+      }
+   }
+
+   &__btn {
+      padding: 10px;
+      background: #3F3F3F;
+      border-radius: 0px 4px 4px 0px;
+      border: none;
+      font-size: 14px;
+      line-height: 120%;
+      color: #FFFFFF;
+      cursor: not-allowed;
+   }
+}
+
+.user {
+   width: max-content;
+   display: flex;
+   padding: 13px 31px;
+   background: white;
+   gap: 10px;
+   border-radius: 6px;
+   margin: 20px auto;
+
+   &__left {
+      gap: 10px;
+      display: flex;
+      flex-direction: column;
+
+      & img {
+         border: 1px solid #3F3F3F;
+         border-radius: 6px;
+         width: 100px;
+         height: 100px;
+      }
+
+      & a {
+         background: #3F3F3F;
+         border-radius: 6px;
+         font-weight: 300;
+         font-size: 14px;
+         line-height: 120%;
+         color: #FFFFFF;
+         width: 100px;
+         height: 35px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+   }
+
+   &__right {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: center;
+
+      & p {
+         font-weight: 700;
+         font-size: 14px;
+         line-height: 120%;
+         color: #3F3F3F;
+
+         & span {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 120%;
+            color: #3F3F3F;
+         }
+      }
+   }
+}
+
+.search__input {
+   position: relative;
+
+   & button {
+      position: absolute;
+      top: 50%;
+      right: 5px;
+      transform: translateY(-50%);
+      outline: none;
+      border: none;
+      background: transparent;
+
+   }
+}
+
+.error {
+   text-align: center;
+   margin: 30px 0;
+}
+
+.sort {
+   max-width: 350px;
+   width: 100%;
+   margin: 20px auto;
+
+   &__title {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 120%;
+      text-transform: capitalize;
+      color: #3F3F3F;
+      text-align: center;
+      margin-bottom: 11px;
+
+
+   }
+
+   &__box {
+      background: #E0E0E0;
+      border-radius: 4px;
+      display: flex;
+      height: 36px;
+      justify-content: center;
+      align-items: center;
+      gap: 3px;
+
+      &-btn {
+         font-weight: 700;
+         font-size: 16px;
+         line-height: 120%;
+         text-transform: capitalize;
+         color: #3F3F3F;
+         border: none;
+         width: 112px;
+         height: 32px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border-radius: 4px;
+         background: transparent;
+
+         &.active {
+            background: #FFFFFF;
+         }
+      }
+   }
+}
+
+.repos {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 20px;
+
+
+   &__item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      background: #FFFFFF;
+      border-radius: 4px;
+      align-items: center;
+
+
+
+   }
+
+   &__link {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 120%;
+      /* identical to box height, or 17px */
+
+
+      color: #FFFFFF;
+      padding: 9px 15px;
+      background: #3F3F3F;
+      border-radius: 6px;
+   }
+
+   &__left {
+      & h2 {
+         font-weight: 700;
+         font-size: 18px;
+         line-height: 120%;
+         color: #000000;
+      }
+
+      & p {
+         font-weight: 400;
+         font-size: 14px;
+         line-height: 120%;
+         color: #000000;
+         display: flex;
+         align-items: center;
+      }
+   }
+}
